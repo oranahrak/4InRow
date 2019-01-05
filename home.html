@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="css/style.css" rel="stylesheet">
+        <script src="home.js"></script>
+        <script>
+        
+        
+        </script>
+</head>
+<body ng-app="startapp">
+    <div ng-controller="homectrl">         
+    <div class="properties">
+        <h1 id="mainTitle">4 in a row</h1>
+
+        <button ng-click="resetGame()" id="newGameButton">new game</button>
+       
+        <h1>Player 1:</h1>
+        <div class="yellowCircle"></div>
+        <h1>Player 2:</h1>
+        <div class="redCircle"></div>
+    </div>
+    <div class="playNow">
+        <h1 ng-show="player1">Player 1 play now</h1>
+        <h1 ng-hide="player1">Player 2 play now</h1>
+    </div>
+    <div ng-repeat="row in circles" class="theCircles">
+        <div ng-repeat="circle in row" class="circlesRow">
+            <div class="redCircle" id="{{circle.id}}"></div>
+        </div>
+    </div>
+    <div class="board" >
+        <div ng-repeat="friend in board" class="board-pics" >
+            <img src="img/Box.png" class="board-pic"ng-click="gameOver||columnClick($index)" ng-disabled="gameOver" id="{{friends[$index].id}}">
+        </div>
+    </div>
+</body>

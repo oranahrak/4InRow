@@ -1,0 +1,81 @@
+/* #ab{
+    text-align: center;
+} */
+.board{
+    width: 72vh;
+    height: 65vh;
+    position: absolute;
+    bottom: 0;
+    right: 24.15vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.board-pics{
+    /* height: 10vh; */
+    width: 14.28%;
+    min-width: 10%;
+    /* margin: 1em; */
+    /* border: 3em; */
+}
+.board-pic{
+    width: 100%;
+    height: 100%;
+}
+
+.redCircle{
+    border-radius: 50%;
+    background: red;
+    /* position: absolute; */
+    /* right: 1%; */
+    width: 7vh;
+    height: 7vh;
+
+}
+.yellowCircle{
+    border-radius: 50%;
+    width: 7vh;
+    height: 7vh;
+    background-color: yellow;
+}
+
+.redCircle{
+    border-radius: 50%;
+    width: 7vh;
+    height: 7vh;
+    background-color: red;
+}
+.theCircles{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 1vh;
+    position: absolute;
+    right: 25.8vh;
+    visibility: hidden;
+}
+
+.circlesRow{
+    margin-left: 3.285vh;
+}
+
+.properties{
+    position:absolute;
+    left: 3vh;
+    width: 40%;
+}
+.playNow{
+    position: absolute;
+    right: 50vh;
+}
+#mainTitle{
+    text-align: center;
+    font-size: 4em;
+}
+
+#newGameButton{
+    background: linear-gradient(#87CEFA,#FAFAD2);
+    height: 8vh;
+    width: 16vh;
+    border-radius: 1em;
+}
